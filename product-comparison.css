@@ -13,6 +13,10 @@ body {
     color: #444;
 }
 
+body.admin-bar #wpadminbar {
+    display: none;
+  }
+
 div, p, span, h1, h2, h3, h4, h5, h6, i, img, sup, ol, li {
     margin: 0;
     padding: 0;
@@ -597,20 +601,13 @@ ol {
 .right-sidebar div.fixed {
     display: block;
     position: fixed;
-    top: 32px;
-    right: 7%;
+    top: 0;
     margin: 0;
     z-index: 1;
 }
 
 .lp .right-panel:last-child {
     margin-bottom: 0;
-}
-
-.lp .what-you-learn {
-    font-family: "Roboto", sans-serif;
-    top: 0;
-    text-align: center;
 }
 
 .lp .right-panel {
@@ -622,6 +619,13 @@ ol {
     padding: 0px 0px 0px 0px;
     margin: 0 0 20px;
 }
+
+.lp .what-you-learn {
+    font-family: "Roboto", sans-serif;
+    top: 0;
+    text-align: center;
+}
+
 
 .lp .right-panel h2 {
     font-family: "Open Sans", sans-serif;
