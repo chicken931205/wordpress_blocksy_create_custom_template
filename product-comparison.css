@@ -414,6 +414,11 @@ ol, ul {
     font-size: 25px;
 }
 
+.lp .left .pros-cons ul:nth-of-type(2) li:before {
+    content: "\E89A";
+    color: #eb5757;
+}
+
 .lp .left .pros-cons h3:last-of-type, .lp .right .pros-cons h3:last-of-type {
     margin-top: 46px;
 }
@@ -861,10 +866,388 @@ a {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    
+@media (max-width: 860px) {
+    .main {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .lp .nav-bar {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px;
+    }
+
+    .nav-bar {
+        display: inline-block !important;
+    }
+
+    .lp .right-sidebar {
+        position: fixed;
+        top: auto;
+        bottom: 90px;
+    }
+
+    .lp .right-sidebar {
+        right: 0;
+    }
+
+    .lp .right-sidebar .main-sources {
+        display: none;
+    }
+
+    .lp .what-you-learn.fixed {
+        display: initial;
+        position: static;
+        top: auto;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .lp .right-sidebar .what-you-learn {
+        border: none;
+        background-color: transparent;
+    }
+
+    .lp .right-sidebar .what-you-learn h2 {
+        display: none;
+    }
+
+    .lp .right-sidebar .reading-progress {
+        top: 14px;
+        background-color: #fff;
+        border-radius: 35px;
+        transform: scale(.6);
+    }
+
+    .lp .what-you-learn .reading-progress {
+        display: block;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .lp .right-sidebar .reading-progress .percent {
+        top: 28px;
+    }
+
+    .lp .right-sidebar svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .lp .right-sidebar .what-you-learn .reading-time p {
+        display: none;
+    }
+
+    .lp .right-sidebar .what-you-learn p {
+        display: none;
+    }
+
+    .lp .right-sidebar .what-you-learn i {
+        display: none;
+    }
+
+    .lp .right-sidebar .what-you-learn p {
+        display: none;
+    }
+
+    .lp .review {
+        margin-bottom: 20px;
+    }
 }
 
-@media (max-width: 480px) {
-   
+@media only screen and (max-width: 768px) {
+    body .main {
+        padding: 5px 0 40px;
+    }
+
+    body .lp {
+        width: 100%;
+    }
+
+    .lp {
+        padding-top: 14px;
+    }
+
+    body .lp .section-1 {
+        padding: 15px 10px 20px;
+        border-radius: 0;
+    }
+
+    body .lp h1 {
+        font-size: 28px;
+    }
+
+    body .lp h2 {
+        font-size: 18px;
+    }
+
+    .lp .nav-bar.fixed {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 1;
+        box-shadow: 0px 10px 10px 0 rgba(74, 74, 74, 0.2);
+    }
+
+    .lp .nav-bar a {
+        display: inline-block;
+        width: 33%;
+        height: 35px;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 7px 0px;
+    }
+
+    body .lp .disclosure {
+        font-size: 14px;
+    }
+    
+    body .lp p {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    body .lp h3 {
+        font-size: 26px;
+        font-weight: 900;
+    }
+
+    body .lp .colored-table h3 {
+        padding: 10px 0;
+        font-size: 22px;
+        font-weight: 900;
+    }
+
+    .lp .colored-table p {
+        font-size: 16px;
+    }
+
+    body .lp .colored-table h4 {
+        font-size: 18px;
+    }
+
+    body .lp .colored-table .table-body {
+        padding: 20px 15px 40px;
+    }
+
+    body .lp .section-2 {
+        padding: 28px 5px 20px;
+    }
+
+    .lp .left h3, .lp .right h5 {
+        font-size: 26px;
+    }
+
+    body .lp .citations {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    body .lp .citations h3, body .lp .citations h4 {
+        padding-left: 20px;
+    }
+
+    body .lp .citations ol {
+        margin-left: 30px;
+        padding: 20px 10px;
+        list-style-position: outside;
+    }
 }
+
+@media (max-width: 720px) {
+    .lp div.citations, .lp .sidebar {
+        padding: 20px 20px 35px;
+    }
+
+    .lp .review:first-of-type {
+        margin-top: 26px;
+    }
+
+    .lp .review {
+        padding: 38px 0 98px;
+        overflow: inherit;
+        margin-bottom: 80px;
+    }
+
+    .lp .review h4 {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: center;
+        color: #404347;
+        text-align: center;
+        margin-right: 0;
+        padding: 0 20px;
+    }
+
+    .lp .review .byline {
+        text-align: center;
+        line-height: 1.56;
+        color: #2c3038;
+    }
+
+    .lp .review>img {
+        top: 0;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        right: auto;
+    }
+
+    .review.test1 .product-image-box {
+        padding: 0;
+        justify-content: center;
+        border-top: 1px solid #F0F0F0;
+    }
+
+    .review.test1 .product-image-box, .review.test1 .grade, .review.test2 .grade, .review.test3 .grade {
+        height: 124px;
+    }
+
+    .product-image-box {
+        padding: 15px;
+    }
+
+    .product-image-box, .circle-summary {
+        width: 50%;
+        height: 166px;
+    }
+
+    .review.test1 .product-image-box a img {
+        max-width: 110px;
+        padding: 5px;
+    }
+
+    .product-image-box img {
+        max-height: 123px;
+    }
+
+    .lp .circle-summary {
+        padding-top: 100px;
+    }
+
+    .product-image-box, .circle-summary {
+        width: 50%;
+        height: 166px;
+    }
+
+    .review.test1 .grade {
+        display: inline-block;
+        width: 50%;
+        border-top: 1px solid #F0F0F0;
+        border-left: 1px solid #F0F0F0;
+        padding: 10px 35px;
+        text-align: center;
+        vertical-align: top;
+        float: none;
+    }
+
+    .grade {
+        float: none;
+        display: block;
+        width: auto;
+        clear: left;
+        overflow: hidden;
+        height: auto;
+        padding: 12px;
+    }
+
+    .review.test1 .grade h1 {
+        font-size: 52px;
+        display: block;
+        margin-top: -2px;
+    }
+
+    .lp .grade h1 {
+        font-size: 48px;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    .lp .left h3, .lp .right h5 {
+        margin-top: 0;
+        font-size: 22px;
+        color: #404347;
+    }
+
+    .review.test1 .grade p {
+        font-size: 11px;
+        position: unset;
+        margin-top: unset;
+        margin-left: 0px;
+        margin-top: -15px;
+    }
+
+    .lp .grade p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0px;
+        top: 0;
+        line-height: 1.25;
+        left: 18px;
+    }
+
+    .lp .left, .lp .right {
+        display: block;
+        width: auto;
+        float: none;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .lp .right {
+        padding-bottom: 0;
+    }
+
+    .lp .right h5 {
+        line-height: 1.82;
+        margin-bottom: 10px;
+    }
+
+    .lp .right a:last-of-type {
+        font-size: 18px;
+        line-height: 1;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .lp .left, .lp .right {
+        padding: 15px;
+    }
+
+    .lp .left .pros-cons li {
+        padding-left: 30px;
+        margin-bottom: 19px;
+    }
+
+    .lp .left .pros-cons li:before {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .review.test1 .grade {
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12pt;
+    }
+}
+
